@@ -1,0 +1,30 @@
+{
+  "name": "tsup-tsm-demo",
+  "version": "1.0.0",
+  "description": "a typescript tsm package",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=14.16"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev":"tsup --watch"
+  },
+  "keywords": [
+    "typescript",
+    "ESM"
+  ],
+  "author": "xin.chen <nshen121@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.2.1",
+    "typescript": "^4.7.4"
+  }
+}
